@@ -33,27 +33,73 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <div class="contact-content">
-                <h1>Get in Touch</h1>
-                <p class="contact-intro">Let's discuss how I can help your organization leverage AI for strategic advantage.</p>
-                
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <h3>LinkedIn</h3>
-                        <p>Connect with me on LinkedIn for professional networking and updates.</p>
-                        <a href="https://www.linkedin.com/in/rob-blaine/" target="_blank" rel="noopener noreferrer" class="contact-button">Connect on LinkedIn</a>
+            <div class="contact-grid">
+                <!-- Contact Form Column -->
+                <div class="contact-form-column">
+                    <h1>Let's Collaborate</h1>
+                    <p class="contact-intro">Have questions, ideas, or opportunities? I'd love to hear from you. Use the form below or connect with me directly.</p>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="AI Consulting">AI Consulting</option>
+                                <option value="Speaking Inquiry">Speaking Inquiry</option>
+                                <option value="General Question">General Question</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Keep me updated on AI insights and projects</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message →</button>
+                    </form>
+                </div>
+
+                <!-- Info Column -->
+                <div class="contact-info-column">
+                    <div class="profile-section">
+                        <img src="images/rb.jpg" alt="Rob Blaine" class="profile-image">
+                        <div class="quick-contact">
+                            <h2>Direct Contact</h2>
+                            <a href="mailto:rblaine@mit.edu" class="email-link">rblaine@mit.edu</a>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/rob-blaine/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn →</a>
+                                <a href="https://x.com/BlaineGame" target="_blank" rel="noopener noreferrer" class="social-link">Twitter →</a>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="contact-method">
-                        <h3>Twitter</h3>
-                        <p>Follow me on Twitter for insights on AI, strategy, and business transformation.</p>
-                        <a href="https://x.com/BlaineGame" target="_blank" rel="noopener noreferrer" class="contact-button">Follow on Twitter</a>
+                    <div class="location-info">
+                        <p>Based in Boston, MA (EST)</p>
+                        <p>Available for virtual and in-person meetings</p>
                     </div>
-                    
-                    <div class="contact-method">
-                        <h3>Email</h3>
-                        <p>For business inquiries and consulting opportunities.</p>
-                        <a href="mailto:your.email@example.com" class="contact-button">Send Email</a>
+
+                    <div class="response-time">
+                        <p>I typically respond within 48 hours</p>
                     </div>
                 </div>
             </div>
@@ -72,5 +118,7 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
 </body>
 </html>
