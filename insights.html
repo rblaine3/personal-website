@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights - Rob Blaine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-layer"></div>
+        <div class="pattern-layer"></div>
+        <div class="glow-layer"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Rob Blaine</a>
+            <div class="nav-links">
+                <a href="index.html">About Me</a>
+                <a href="insights.html" class="active">Insights</a>
+                <a href="#services">Services</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Insights Section -->
+    <section class="insights">
+        <div class="container">
+            <h1>Insights & Articles</h1>
+            <div class="insights-grid" id="insights-container">
+                <!-- Articles will be loaded here dynamically -->
+                <div class="loading">Loading articles...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Rob Blaine. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rob-blaine/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="https://x.com/BlaineGame" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/insights.js"></script>
+</body>
+</html>
