@@ -1,50 +1,50 @@
 [
-  {
-    "title": "The Appeal of Services as a Software",
-    "date": "December 26, 2024",
-    "date_iso": "2024-12-26",
-    "url": "articles/the-appeal-of-services-as-a-software.html",
-    "original_url": "https://robblaine.substack.com/p/the-appeal-of-services-as-a-software",
-    "excerpt": "The age of traditional SaaS dominance is over. AI is dismantling moats and leaving companies scrambling for a new edge, as I explored in my last article, \"In Search of a Moat: The Decline of B2B SaaS."
-  },
-  {
-    "title": "In Search of a Moat: The Decline of B2B SaaS",
-    "date": "December 02, 2024",
-    "date_iso": "2024-12-02",
-    "url": "articles/in-search-of-a-moat:-the-decline-of-b2b-saas.html",
-    "original_url": "https://robblaine.substack.com/p/in-search-of-a-moat-the-decline-of",
-    "excerpt": "The SaaS model has defined a generation of B2B tech startups. It\u2019s brought a steady stream of revenue to companies, scaled seamlessly, and transformed business technology. But in today\u2019s rapidly evolving AI landscape, the foundation of B2B SaaS is shifting."
-  },
-  {
-    "title": "The Renaissance of the Non-Technical Cofounder",
-    "date": "September 20, 2024",
-    "date_iso": "2024-09-20",
-    "url": "articles/the-renaissance-of-the-non-technical-cofounder.html",
-    "original_url": "https://robblaine.substack.com/p/the-renaissance-of-the-non-technical",
-    "excerpt": "In today\u2019s AI-driven world, it is absolutely essential for all founders to be AI-native. Every founder should know how to leverage AI tools to scale their efforts and grow their business."
-  },
-  {
-    "title": "AI Messaging: Lessons for Startups",
-    "date": "August 06, 2024",
-    "date_iso": "2024-08-06",
-    "url": "articles/ai-messaging:-lessons-for-startups.html",
-    "original_url": "https://robblaine.substack.com/p/ai-messaging-lessons-for-startups",
-    "excerpt": "Arthur Clarke\u2019s quote, \"Any sufficiently advanced technology is indistinguishable from magic,\" is particularly relevant when discussing artificial intelligence (AI). Today, when we hear \u201cAI,\u201d most of us think of Generative AI and the advancements from companies like OpenAI and Google."
-  },
-  {
-    "title": "Trust Issues: Navigating Our Relationship with AI",
-    "date": "August 01, 2024",
-    "date_iso": "2024-08-01",
-    "url": "articles/trust-issues:-navigating-our-relationship-with-ai.html",
-    "original_url": "https://robblaine.substack.com/p/trust-issues-navigating-our-relationship",
-    "excerpt": "Imagine relying on a machine to make decisions that could shape your career or safeguard your health. As AI technology continues to advance, we stand at the crossroads of a new era where life itself will become entwined with AI."
-  },
-  {
-    "title": "Systems Thinkers: The New 10X Employees",
-    "date": "July 29, 2024",
-    "date_iso": "2024-07-29",
-    "url": "articles/systems-thinkers:-the-new-10x-employees.html",
-    "original_url": "https://robblaine.substack.com/p/systems-thinkers-the-new-10x-employees",
-    "excerpt": "As generative AI technology races forward, mastering systems thinking has become indispensable. Large language models (LLMs) like ChatGPT boast impressive capabilities, yet their current applications often fall short of delivering the results users want with a single, well-crafted prompt."
-  }
+    {
+        "title": "The Appeal of Services as a Software",
+        "date": "December 26, 2024",
+        "date_iso": "2024-12-26",
+        "url": "articles/the-appeal-of-services-as-a-software.html",
+        "original_url": "https://robblaine.substack.com/p/the-appeal-of-services-as-a-software",
+        "excerpt": "The age of traditional SaaS dominance is over. AI is dismantling moats and leaving companies scrambling for a new edge, as I explored in my last article, \"In Search of a Moat: The Decline of B2B SaaS."
+    },
+    {
+        "title": "In Search of a Moat: The Decline of B2B SaaS",
+        "date": "December 02, 2024",
+        "date_iso": "2024-12-02",
+        "url": "articles/in-search-of-a-moat:-the-decline-of-b2b-saas.html",
+        "original_url": "https://robblaine.substack.com/p/in-search-of-a-moat-the-decline-of",
+        "excerpt": "The SaaS model has defined a generation of B2B tech startups. It\u2019s brought a steady stream of revenue to companies, scaled seamlessly, and transformed business technology. But in today\u2019s rapidly evolving AI landscape, the foundation of B2B SaaS is shifting."
+    },
+    {
+        "title": "The Renaissance of the Non-Technical Cofounder",
+        "date": "September 20, 2024",
+        "date_iso": "2024-09-20",
+        "url": "articles/the-renaissance-of-the-non-technical-cofounder.html",
+        "original_url": "https://robblaine.substack.com/p/the-renaissance-of-the-non-technical",
+        "excerpt": "In today\u2019s AI-driven world, it is absolutely essential for all founders to be AI-native. Every founder should know how to leverage AI tools to scale their efforts and grow their business."
+    },
+    {
+        "title": "AI Messaging: Lessons for Startups",
+        "date": "August 06, 2024",
+        "date_iso": "2024-08-06",
+        "url": "articles/ai-messaging:-lessons-for-startups.html",
+        "original_url": "https://robblaine.substack.com/p/ai-messaging-lessons-for-startups",
+        "excerpt": "Arthur Clarke\u2019s quote, \"Any sufficiently advanced technology is indistinguishable from magic,\" is particularly relevant when discussing artificial intelligence (AI). Today, when we hear \u201cAI,\u201d most of us think of Generative AI and the advancements from companies like OpenAI and Google."
+    },
+    {
+        "title": "Trust Issues: Navigating Our Relationship with AI",
+        "date": "August 01, 2024",
+        "date_iso": "2024-08-01",
+        "url": "articles/trust-issues:-navigating-our-relationship-with-ai.html",
+        "original_url": "https://robblaine.substack.com/p/trust-issues-navigating-our-relationship",
+        "excerpt": "Imagine relying on a machine to make decisions that could shape your career or safeguard your health. As AI technology continues to advance, we stand at the crossroads of a new era where life itself will become entwined with AI."
+    },
+    {
+        "title": "Systems Thinkers: The New 10X Employees",
+        "date": "July 29, 2024",
+        "date_iso": "2024-07-29",
+        "url": "articles/systems-thinkers:-the-new-10x-employees.html",
+        "original_url": "https://robblaine.substack.com/p/systems-thinkers-the-new-10x-employees",
+        "excerpt": "As generative AI technology races forward, mastering systems thinking has become indispensable. Large language models (LLMs) like ChatGPT boast impressive capabilities, yet their current applications often fall short of delivering the results users want with a single, well-crafted prompt."
+    }
 ]

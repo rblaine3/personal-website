@@ -160,10 +160,13 @@ def create_article_page(title, content, date, url):
     # Clean the HTML content
     cleaned_content = clean_html_content(content)
     
-    # Create the articles directory if it doesn't exist
-    if not os.path.exists('articles'):
-        os.makedirs('articles')
+    # Get the absolute path to the articles directory
+    articles_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'articles')
     
+    # Create the articles directory if it doesn't exist
+    if not os.path.exists(articles_dir):
+        os.makedirs(articles_dir)
+        
     # Template for individual article pages
     article_template = f'''<!DOCTYPE html>
 <html lang="en">
@@ -191,7 +194,8 @@ def create_article_page(title, content, date, url):
             <div class="nav-links">
                 <a href="../index.html">About Me</a>
                 <a href="../insights.html">Insights</a>
-                <a href="../index.html#services">Services</a>
+                <a href="../services.html">Services</a>
+                <a href="../contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -227,19 +231,32 @@ def create_article_page(title, content, date, url):
         </div>
     </article>
 
+    <!-- Call to Action Section -->
+    <section class="article-cta">
+        <div class="container">
+            <h2>Ready to Transform Your Business with AI?</h2>
+            <p>Let's explore how AI can drive growth and innovation for your organization.</p>
+            <a href="../services.html" class="cta-button large">View My Services</a>
+        </div>
+    </section>
+
     <script src="../scripts/main.js"></script>
 </body>
 </html>'''
     
-    # Write the article page
-    with open(f'articles/{slug}.html', 'w', encoding='utf-8') as f:
+    # Write the article page using absolute path
+    article_path = os.path.join(articles_dir, f'{slug}.html')
+    with open(article_path, 'w', encoding='utf-8') as f:
         f.write(article_template)
     
     return f'articles/{slug}.html'
 
 def sync_substack_posts():
     # Your Substack RSS feed URL
-    SUBSTACK_RSS = 'https://robblaine.substack.com/feed'  # Update this with your actual Substack RSS feed URL
+    SUBSTACK_RSS = 'https://robblaine.substack.com/feed'
+    
+    # Get the absolute path to the articles directory
+    articles_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'articles')
     
     # Parse the RSS feed
     feed = feedparser.parse(SUBSTACK_RSS)
@@ -275,7 +292,7 @@ def sync_substack_posts():
         articles.append({
             'title': title,
             'date': date_formatted,
-            'date_iso': date_iso,  # Keep ISO date for sorting if needed
+            'date_iso': date_iso,
             'url': local_url,
             'original_url': url,
             'excerpt': description
@@ -284,9 +301,10 @@ def sync_substack_posts():
     # Sort articles by date (newest first)
     articles.sort(key=lambda x: x['date_iso'], reverse=True)
     
-    # Save article metadata to JSON file
-    with open('articles/metadata.json', 'w', encoding='utf-8') as f:
-        json.dump(articles, f, indent=2)
+    # Write metadata file using absolute path
+    metadata_path = os.path.join(articles_dir, 'metadata.json')
+    with open(metadata_path, 'w', encoding='utf-8') as f:
+        json.dump(articles, f, indent=4)
 
 if __name__ == '__main__':
     sync_substack_posts()
