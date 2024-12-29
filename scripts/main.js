@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeMobileMenu();
     initializeBackgroundEffect();
     initializeCursorLight();
+    initializeContactForm();
     if (document.querySelector('.carousel')) {
         initializeCarousel();
     }
@@ -223,6 +224,57 @@ function initializeCursorLight() {
 
     // Start the animation loop
     updateCursorLight();
+}
+
+// Contact form handling
+function initializeContactForm() {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = new FormData(form);
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            company: formData.get('company'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+            newsletter: formData.get('newsletter') === 'on'
+        };
+
+        try {
+            // Send to Formspree
+            const response = await fetch('https://formspree.io/f/movvwnkz', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.ok) {
+                // Show success message
+                form.innerHTML = `
+                    <div class="success-message">
+                        <h2>Message Sent!</h2>
+                        <p>Thank you for reaching out. I'll get back to you within 48 hours.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Failed to send message');
+            }
+        } catch (error) {
+            // Show error message
+            const submitButton = form.querySelector('button[type="submit"]');
+            const errorMessage = document.createElement('p');
+            errorMessage.className = 'error-message';
+            errorMessage.textContent = 'Sorry, there was an error sending your message. Please try again or contact me directly via email.';
+            submitButton.parentNode.insertBefore(errorMessage, submitButton);
+        }
+    });
 }
 
 // Carousel functionality

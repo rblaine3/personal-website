@@ -2215,3 +2215,26 @@ img {
         font-size: 1.1rem;
     }
 }
+
+/* Form Messages */
+.success-message {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(var(--color-accent-1-rgb), 0.1);
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.success-message h2 {
+    color: var(--color-accent-1);
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+    text-align: center;
+}
